@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphic Database Website</title>
+    <style>
+        /* Reset and base styles for flat design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #ffffff, #add8e6); /* White to light blue for subtle depth */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #001f3f; /* Navy blue for text */
+        }
+
+        /* Clear header with glassmorphic effect */
+        header {
+            background: rgba(255, 255, 255, 0.4); /* Semi-transparent white */
+            backdrop-filter: blur(15px); /* Frosted glass blur */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for flat edge */
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff; /* Blue accent */
+        }
+
+        /* Main content: Flexible and centered */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        /* Centered database instance element with glassmorphic style */
+        .database-instance {
+            background: rgba(255, 255, 255, 0.3); /* Translucent white glass */
+            backdrop-filter: blur(20px); /* Stronger blur for focus */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Minimal flat border */
+            border-radius: 12px; /* Soft corners for modern flat look */
+            padding: 3rem;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: none; /* No shadows for flat design */
+        }
+
+        .database-instance h2 {
+            margin-bottom: 1rem;
+            color: #007bff; /* Blue title */
+        }
+
+        .database-instance p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        /* Clear footer with glassmorphic effect */
+        footer {
+            background: rgba(255, 255, 255, 0.4); /* Matching header */
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #001f3f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Website Header
+    </header>
+    <main>
+        <div class="database-instance">
+            <h1>Welcome to TechCorp Web Server</h1>
+            <p>This page was deployed automatically using Terraform & EC2 user-data.</p>
+            <h2>Database Instance</h2>
+            <p class="id">Instance ID: {{INSTANCE_ID}}</p>
+
+            <p><a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank">
+                View this page on GitHub
+            </a></p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Your Website | All Rights Reserved
+    </footer>
+</body>
+</html>
